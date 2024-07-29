@@ -35,7 +35,6 @@
           <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Añadir imágenes de enemigos -->
         <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="0" Stretch="Uniform"/>
         <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="1" Stretch="Uniform"/>
         <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="2" Stretch="Uniform"/>
@@ -81,7 +80,6 @@
         <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="9" Stretch="Uniform"/>
       </Grid>
 
-      <!-- Grid para el jugador -->
       <Grid Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
         <Canvas x:Name="PlayerCanvas" Width="1000" Height="50" IsTabStop="True">
           <Image x:Name="PlayerImage" Source="ms-appx:///Assets/Splash/player.png" Stretch="Uniform" Width="50" Height="50"/>
