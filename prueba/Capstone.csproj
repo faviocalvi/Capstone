@@ -1,0 +1,54 @@
+<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-maccatalyst;net8.0-windows10.0.19041;net8.0-desktop</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+    <!-- Display name -->
+    <ApplicationTitle>prueba</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.prueba</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>favio</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>prueba powered by Uno Platform.</Description>
+    <!--
+      If you encounter this error message:
+
+        error NETSDK1148: A referenced assembly was compiled using a newer version of Microsoft.Windows.SDK.NET.dll.
+        Please update to a newer .NET SDK in order to reference this assembly.
+
+      This means that the two packages below must be aligned with the "build" version number of
+      the "Microsoft.Windows.SDK.BuildTools" package above, and the "revision" version number
+      must be the highest found in https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref.
+    -->
+    <!-- <WindowsSdkPackageVersion>10.0.22621.28</WindowsSdkPackageVersion> -->
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <UnoFeatures>
+      Mvvm;
+    </UnoFeatures>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Grabación.m4a" />
+    <None Remove="Assets\sounds\2nf-84831.mp3" />
+    <None Remove="Assets\sounds\Grabacion.mp3" />
+    <None Remove="Assets\Splash\background.png" />
+    <None Remove="Assets\Splash\bullet.png" />
+    <None Remove="Assets\Splash\enemy (1).png" />
+    <None Remove="Assets\Splash\enemy.png" />
+    <None Remove="Assets\Splash\player.png" />
+    <None Remove="Assets\Splash\ufo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\sounds\Grabacion.mp3" />
+  </ItemGroup>
+
+</Project>

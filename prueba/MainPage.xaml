@@ -1,0 +1,92 @@
+﻿<Page x:Class="prueba.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:prueba"
+      IsTabStop="False"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+      KeyUp="Page_KeyUp"
+      KeyDown="Page_KeyDown"
+      Loaded="Page_Loaded">
+  <Grid x:Name="MainGrid">
+    <Image Source="ms-appx:///Assets/Splash/background.png" Stretch="Fill"/>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="3*"/>
+        <RowDefinition Height="2*"/>
+      </Grid.RowDefinitions>
+
+      <Grid Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Añadir imágenes de enemigos -->
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="0" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="1" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="2" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="3" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="4" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="5" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="6" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="7" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="8" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="0" Grid.Column="9" Stretch="Uniform"/>
+
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="0" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="1" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="2" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="3" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="4" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="5" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="6" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="7" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="8" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="1" Grid.Column="9" Stretch="Uniform"/>
+
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="0" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="1" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="2" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="3" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="4" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="5" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="6" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="7" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="8" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="2" Grid.Column="9" Stretch="Uniform"/>
+
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="0" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="1" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="2" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="3" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="4" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="5" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="6" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="7" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="8" Stretch="Uniform"/>
+        <Image Source="ms-appx:///Assets/Splash/enemy.png" Grid.Row="3" Grid.Column="9" Stretch="Uniform"/>
+      </Grid>
+
+      <!-- Grid para el jugador -->
+      <Grid Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+        <Canvas x:Name="PlayerCanvas" Width="1000" Height="50" IsTabStop="True">
+          <Image x:Name="PlayerImage" Source="ms-appx:///Assets/Splash/player.png" Stretch="Uniform" Width="50" Height="50"/>
+        </Canvas>
+      </Grid>
+    </Grid>
+  </Grid>
+</Page>
